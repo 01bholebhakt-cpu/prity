@@ -1,0 +1,118 @@
+<style>
+:root {
+--gold: #c9a14a;
+--dark: #111;
+--light: #fff;
+--soft: #f7f5f2;
+}
+
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+font-family: 'Poppins', sans-serif;
+background: var(--light);
+color: var(--dark);
+}
+
+
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 80px;
+background: white;
+position: sticky;
+top: 0;
+z-index: 1000;
+}
+
+
+.logo {
+font-family: 'Playfair Display', serif;
+font-size: 26px;
+font-weight: 700;
+}
+.logo span { color: var(--gold); }
+
+
+nav a {
+margin-left: 25px;
+text-decoration: none;
+color: var(--dark);
+font-weight: 500;
+}
+
+
+.hero {
+height: 90vh;
+background: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)), url('https://images.unsplash.com/photo-1522336572468-97b06e8ef143');
+background-size: cover;
+background-position: center;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+color: white;
+}
+
+
+.hero h1 {
+font-family: 'Playfair Display', serif;
+font-size: 56px;
+}
+
+
+.hero p {
+margin: 20px 0;
+font-size: 18px;
+}
+
+
+.btn {
+display: inline-block;
+padding: 14px 32px;
+background: var(--gold);
+color: white;
+text-decoration: none;
+border-radius: 30px;
+font-weight: 500;
+}
+
+
+.btn.dark { background: var(--dark); }
+
+
+.intro {
+padding: 100px 80px;
+text-align: center;
+background: var(--soft);
+}
+
+
+.intro h2 {
+font-family: 'Playfair Display', serif;
+font-size: 42px;
+margin-bottom: 20px;
+}
+
+
+.cta {
+padding: 80px;
+text-align: center;
+}
+
+
+footer {
+padding: 30px;
+text-align: center;
+background: var(--dark);
+color: white;
+}
+
+
+@media(max-width: 768px) {
+.navbar { padding: 20px; }
+nav a { margin-left: 12px; }
+.hero h1 { font-size: 38px; }
+}
+</style>
